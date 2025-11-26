@@ -1,0 +1,27 @@
+people_follow:
+  ros__parameters:
+    # YOLO模型路径
+    model: "yolov8n.pt"
+    
+    # 输入图像话题
+    input_image_topic: "/camera/image_raw"
+    
+    # 是否启用CUDA加速
+    enable_cuda: true
+    
+    # 置信度阈值
+    conf_threshold: 0.5
+    
+    # 目标检测类别
+    target_class: "person"
+    
+    # 控制参数
+    kp_linear: 0.5      # 线速度比例系数
+    kp_angular: 1.0     # 角速度比例系数
+    max_linear_speed: 0.3   # 最大线速度 (m/s)
+    max_angular_speed: 1.0  # 最大角速度 (rad/s)
+    target_distance: 2.0    # 目标跟随距离 (米)
+    
+    # 图像中心 (通常会自动更新)
+    image_center_x: 320
+    image_center_y: 240

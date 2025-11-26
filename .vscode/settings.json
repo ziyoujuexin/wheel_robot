@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/home/wheeltec/wheeltec_ros2/src/qt_ros_test",
+    "files.associations": {
+        "chrono": "cpp"
+    }
+}
