@@ -36,6 +36,7 @@ def generate_launch_description():
     carto_slam = LaunchConfiguration('carto_slam', default='false')
     
     carto_slam_dec = DeclareLaunchArgument('carto_slam',default_value='false')
+    # 声源追踪包
     sound_track_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory('sound_track'), 'launch', 'sound_track_serial.launch.py')),
@@ -164,6 +165,7 @@ def generate_launch_description():
     ld.add_action(joint_state_publisher_node)
     ld.add_action(imu_filter_node)    
     ld.add_action(robot_ekf)
+    # 添加声源追踪
     ld.add_action(sound_track_launch)
 
     # 添加舵机控制节点
