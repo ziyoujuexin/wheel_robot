@@ -37,6 +37,8 @@ class SerialAngleNode(Node):
 
         self.pub_angle = self.create_publisher(UInt32, output_topic, 10)
         self.pub_debug = self.create_publisher(String, debug_topic, 10)
+        self.last_angle: Optional[int] = None
+        self.last_angle_time = None
 
         self.serial_port: Optional[serial.Serial] = None
         if serial is None:
@@ -85,8 +87,13 @@ class SerialAngleNode(Node):
         if match:
             try:
                 angle = int(match.group(1))
-                self.get_logger().info(f"解析角度: {angle}")
-                return angle
+                self.last_angle = angle % 360
+                self.last_angle_time = self.get_clock().now()
+                ts = self.last_angle_time.to_msg()
+                self.get_logger().info(
+                    f"解析角度: {self.last_angle} @ {ts.sec}.{ts.nanosec:09d}"
+                )
+                return self.last_angle
             except ValueError:
                 self.get_logger().warn("角度转换失败")
         return None
