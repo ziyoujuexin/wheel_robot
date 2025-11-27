@@ -7,3 +7,14 @@
 # 排除 log 目录
 /log/
 /.vscode/
+# 排除所有临时文件和编译生成的文件
+*.log
+*.out
+*.o
+*.so
+*.a
+*.bak
+
+# 排除 Git 忽略的文件
+*.swp
+*.swm
