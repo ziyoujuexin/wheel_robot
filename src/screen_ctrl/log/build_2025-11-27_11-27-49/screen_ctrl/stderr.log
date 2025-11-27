@@ -1,0 +1,11 @@
+[01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:[m[K In member function ‘[01m[Kvoid ScreenNode::send_frame(uint8_t, const std::vector<unsigned char>&)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:9:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kframe_len[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+    9 |     size_t [01;35m[Kframe_len[m[K = FRAME_LENGTH + payload_len;
+      |            [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:[m[K In member function ‘[01m[Kvoid ScreenNode::modelSubCallback(std_msgs::msg::Int8_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:77:23:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   77 |         [01;35m[Kplay_animation(animation[1])[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:78:5:[m[K [01;36m[Knote: [m[Khere
+   78 |     [01;36m[Kcase[m[K SAD:
+      |     [01;36m[K^~~~[m[K

@@ -25,6 +25,7 @@ setup(
         "console_scripts": [
             "angle_publisher = sound_track.angle_publisher:main",
             "serial_angle_node = sound_track.serial_angle_node:main",
+            "sound_track_controller = sound_track.controller_node:main",
         ],
     },
 )

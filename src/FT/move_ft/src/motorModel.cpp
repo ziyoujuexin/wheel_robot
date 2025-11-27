@@ -29,6 +29,7 @@ moveNode::moveNode() : ftNode("moveNode")
     otherModeSub = this->create_subscription<std_msgs::msg::Int8>("/mode",10,[this](const std_msgs::msg::Int8::SharedPtr msg){otherModeSubCallBack(msg);});
     cmdSub = this->create_subscription<geometry_msgs::msg::Twist>("/cmd_vel",10,[this](const geometry_msgs::msg::Twist::SharedPtr msg){cmdSubCallBack(msg);});
     ftPublisher = this->create_publisher<ftmsg::msg::MotorData>("/info",10);
+    followSub = this->create_subscription<wheeltec_mic_msg::msg::MotionControl>("/follow_flag",10,[this](const wheeltec_mic_msg::msg::MotionControl::SharedPtr msg){followSubCallBack(msg);});
     timer_ = this->create_wall_timer(std::chrono::milliseconds(10),[this](){state_time_check();});
     msg_ft.setFs(1,2000,1000,POS_MODE,std::nullopt,30);
     this->declare_parameter<std::vector<long int>>("keep_times",std::vector<long int>{1,1,1,1});
@@ -43,6 +44,7 @@ moveNode::moveNode() : ftNode("moveNode")
     // RCLCPP_INFO(this->get_logger(),"times:%ld",param_vec[1]);  
       
 }
+
 
 void moveNode::modelSubCallBack(const std_msgs::msg::Int32::SharedPtr msg)
 {
@@ -61,7 +63,11 @@ void moveNode::otherModeSubCallBack(const std_msgs::msg::Int8::SharedPtr msg)
 {
 
 }
-
+void moveNode::followSubCallBack(const wheeltec_mic_msg::msg::MotionControl::SharedPtr msg)
+{
+    if(msg->follow_flag == 1) is_follow = true;
+    else is_follow = false;
+}
 void moveNode::cmdSubCallBack(const geometry_msgs::msg::Twist::SharedPtr msg)
 {
     if(msg->linear.x != 0)
@@ -120,16 +126,17 @@ void moveNode::modelExcute(int step)
         
         case SAD:
             // sendmsg(HEAD,2000,500,POS_MODE);
-            sendmsg(HEAD,2200,300);
-            sendmsg(LEFT_SHOULDER,3200,1500);
-            sendmsg(RIGHT_SHOULDER,700);
+            sendmsg(HEAD,2100,300);
+            sendmsg(LEFT_SHOULDER,3100,1500);
+            sendmsg(RIGHT_SHOULDER,1000);
             // sendmsg()
             break;
         
         case CONFUSE:
-            sendmsg(HEAD,2200,500,std::nullopt,0,30);
-            sendmsg(NECK,2450,500);
-            sendmsg(LEFT_SHOULDER,3850,1500,std::nullopt,0,50);
+            sendmsg(HEAD,2100,500,std::nullopt,0,30);
+            sendmsg(NECK,2300,500);
+            sendmsg(LEFT_SHOULDER,3336,1500,std::nullopt,0,50);
+            sendmsg(LEFT_ARM,854,1500,std::nullopt,0,50);
             break;
 
         default:
@@ -232,8 +239,8 @@ void moveNode::modelExcute(int step)
         {
         case 0: 
 
-            sendmsg(LEFT_ARM,670,700);
-            sendmsg(RIGHT_ARM,670);
+            sendmsg(LEFT_ARM,730,700);
+            sendmsg(RIGHT_ARM,730);
             sendmsg(NECK,2200,500);
             break;
         case 1:
@@ -248,12 +255,12 @@ void moveNode::modelExcute(int step)
     case CONFUSE:
         if(step%2 == 0)
         {
-            sendmsg(LEFT_ARM,780,400);
-            sendmsg(LEFT_SHOULDER,3850,700);
+            sendmsg(LEFT_ARM,950,400);
+            sendmsg(LEFT_SHOULDER,3403,700);
         }
         else
         {
-            sendmsg(LEFT_SHOULDER,3600,700);
+            sendmsg(LEFT_SHOULDER,3227,700);
             sendmsg(LEFT_ARM,678,400);
         }
         break;
@@ -292,6 +299,7 @@ void moveNode::state_time_check()
         next_state = STOP;
         // state = CHANGE;
     }
+    if(is_follow == true) next_state = SWING;
 }
 
 double moveNode::get_delay_step(int step)//todo:change delay time lode function to hashmap
@@ -302,8 +310,8 @@ double moveNode::get_delay_step(int step)//todo:change delay time lode function 
         {0.8,0.8},
         {1.0,1.0},
         {0.6,0.6},
-        {0.5,0.5},
-        {1.5,1.5}
+        {0.8,0.8},
+        {1.0,1.0}
     };
     int s = (state >=0 && state <= 6) ? state : 0;
     return delay_time[s][step%delay_time[s].size()];

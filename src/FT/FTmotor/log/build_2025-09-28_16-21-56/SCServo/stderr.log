@@ -1,0 +1,17 @@
+WARNING: Package name "SCServo" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SCSCL.cpp:[m[K In member function ‘[01m[Kvirtual void SCSCL::SyncWritePos(u8*, u8, u16*, u16*, u16*)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SCSCL.cpp:45:8:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Koffbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+   45 |     u8 [01;35m[Koffbuf[m[K[IDN][6];
+      |        [01;35m[K^~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSBL.cpp:[m[K In member function ‘[01m[Kvirtual void SMSBL::SyncWritePosEx(u8*, u8, s16*, u16*, u8*)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSBL.cpp:56:8:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Koffbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+   56 |     u8 [01;35m[Koffbuf[m[K[IDN][7];
+      |        [01;35m[K^~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSCL.cpp:[m[K In member function ‘[01m[Kvirtual void SMSCL::SyncWritePosEx(u8*, u8, s16*, u16*, u8*)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSCL.cpp:55:8:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Koffbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+   55 |     u8 [01;35m[Koffbuf[m[K[IDN][7];
+      |        [01;35m[K^~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMS_STS.cpp:[m[K In member function ‘[01m[Kvirtual void SMS_STS::SyncWritePosEx(u8*, u8, s16*, u16*, u8*)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMS_STS.cpp:56:8:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Koffbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+   56 |     u8 [01;35m[Koffbuf[m[K[IDN][7];
+      |        [01;35m[K^~~~~~[m[K

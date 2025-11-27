@@ -1,0 +1,403 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (SCServo) JobQueued: {'identifier': 'SCServo', 'dependencies': OrderedDict()}
+[0.000463] (SCServo) JobStarted: {'identifier': 'SCServo'}
+[0.094549] (-) TimerEvent: {}
+[0.165818] (SCServo) JobProgress: {'identifier': 'SCServo', 'progress': 'cmake'}
+[0.166056] (SCServo) Command: {'cmd': ['/usr/bin/cmake', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor', '-DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo'], 'cwd': '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wheeltec'), ('SSH_CLIENT', '192.168.1.122 64373 22'), ('ROS_PACKAGE_PATH', '/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors/lib:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_slam/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_odom/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_util/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_sync/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib:/home/wheeltec/rtabmap_ws/install/rtabmap/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec/wheeltec_ros2/src/FT'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7b584093-e02d-4536-829c-ebd02e3cdb1f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install:/home/wheeltec/rtabmap_ws/install:/home/wheeltec/wheeltec_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wheeltec'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap/lib/x86_64-linux-gnu/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '22'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/remote-cli:/home/wheeltec/rtabmap_ws/install/rtabmap/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8888643f5c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rviz2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap_ros:/home/wheeltec/rtabmap_ws/install/rtabmap_launch:/home/wheeltec/rtabmap_ws/install/rtabmap_examples:/home/wheeltec/rtabmap_ws/install/rtabmap_demos:/home/wheeltec/rtabmap_ws/install/rtabmap_viz:/home/wheeltec/rtabmap_ws/install/rtabmap_slam:/home/wheeltec/rtabmap_ws/install/rtabmap_odom:/home/wheeltec/rtabmap_ws/install/rtabmap_util:/home/wheeltec/rtabmap_ws/install/rtabmap_sync:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins:/home/wheeltec/rtabmap_ws/install/rtabmap_python:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.122 64373 192.168.1.160 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/rtabmap_ws/build/rtabmap_python:/home/wheeltec/rtabmap_ws/install/rtabmap_python/lib/python3.10/site-packages:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rviz2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap_ros:/home/wheeltec/rtabmap_ws/install/rtabmap_launch:/home/wheeltec/rtabmap_ws/install/rtabmap_examples:/home/wheeltec/rtabmap_ws/install/rtabmap_demos:/home/wheeltec/rtabmap_ws/install/rtabmap_viz:/home/wheeltec/rtabmap_ws/install/rtabmap_slam:/home/wheeltec/rtabmap_ws/install/rtabmap_odom:/home/wheeltec/rtabmap_ws/install/rtabmap_util:/home/wheeltec/rtabmap_ws/install/rtabmap_sync:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/rtabmap_ws/install/rtabmap_python:/opt/ros/humble:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap')]), 'shell': False}
+[0.195721] (-) TimerEvent: {}
+[0.296950] (-) TimerEvent: {}
+[0.399378] (-) TimerEvent: {}
+[0.500664] (-) TimerEvent: {}
+[0.602880] (-) TimerEvent: {}
+[0.706484] (-) TimerEvent: {}
+[0.808460] (-) TimerEvent: {}
+[0.912389] (-) TimerEvent: {}
+[0.992038] (SCServo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.013381] (-) TimerEvent: {}
+[1.115361] (-) TimerEvent: {}
+[1.217445] (-) TimerEvent: {}
+[1.319452] (-) TimerEvent: {}
+[1.420968] (-) TimerEvent: {}
+[1.523835] (-) TimerEvent: {}
+[1.544865] (SCServo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.617828] (SCServo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.624708] (-) TimerEvent: {}
+[1.727673] (-) TimerEvent: {}
+[1.830296] (-) TimerEvent: {}
+[1.931991] (-) TimerEvent: {}
+[2.035518] (-) TimerEvent: {}
+[2.139591] (-) TimerEvent: {}
+[2.240787] (-) TimerEvent: {}
+[2.342480] (-) TimerEvent: {}
+[2.444019] (-) TimerEvent: {}
+[2.547023] (-) TimerEvent: {}
+[2.650812] (-) TimerEvent: {}
+[2.678046] (SCServo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.701839] (SCServo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.703704] (SCServo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.706359] (SCServo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.718837] (SCServo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.751912] (-) TimerEvent: {}
+[2.853742] (-) TimerEvent: {}
+[2.957440] (-) TimerEvent: {}
+[3.058550] (-) TimerEvent: {}
+[3.164135] (-) TimerEvent: {}
+[3.266669] (-) TimerEvent: {}
+[3.368134] (-) TimerEvent: {}
+[3.470661] (-) TimerEvent: {}
+[3.571849] (-) TimerEvent: {}
+[3.674896] (-) TimerEvent: {}
+[3.776535] (-) TimerEvent: {}
+[3.830668] (SCServo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.850582] (SCServo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.851512] (SCServo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.852602] (SCServo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.877400] (-) TimerEvent: {}
+[3.979018] (-) TimerEvent: {}
+[3.987681] (SCServo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.079918] (-) TimerEvent: {}
+[4.181059] (-) TimerEvent: {}
+[4.283058] (-) TimerEvent: {}
+[4.384684] (-) TimerEvent: {}
+[4.486542] (-) TimerEvent: {}
+[4.589460] (-) TimerEvent: {}
+[4.692072] (-) TimerEvent: {}
+[4.794767] (-) TimerEvent: {}
+[4.897710] (-) TimerEvent: {}
+[4.999697] (-) TimerEvent: {}
+[5.101299] (-) TimerEvent: {}
+[5.202591] (-) TimerEvent: {}
+[5.257588] (SCServo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.303920] (-) TimerEvent: {}
+[5.406809] (-) TimerEvent: {}
+[5.509592] (-) TimerEvent: {}
+[5.612104] (-) TimerEvent: {}
+[5.713618] (-) TimerEvent: {}
+[5.816335] (-) TimerEvent: {}
+[5.917973] (-) TimerEvent: {}
+[6.020397] (-) TimerEvent: {}
+[6.123009] (-) TimerEvent: {}
+[6.224003] (-) TimerEvent: {}
+[6.325867] (-) TimerEvent: {}
+[6.428493] (-) TimerEvent: {}
+[6.529681] (-) TimerEvent: {}
+[6.632367] (-) TimerEvent: {}
+[6.734058] (-) TimerEvent: {}
+[6.836850] (-) TimerEvent: {}
+[6.939518] (-) TimerEvent: {}
+[7.041523] (-) TimerEvent: {}
+[7.144805] (-) TimerEvent: {}
+[7.246748] (-) TimerEvent: {}
+[7.348788] (-) TimerEvent: {}
+[7.452009] (-) TimerEvent: {}
+[7.553824] (-) TimerEvent: {}
+[7.657024] (-) TimerEvent: {}
+[7.712918] (SCServo) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[7.758011] (-) TimerEvent: {}
+[7.859883] (-) TimerEvent: {}
+[7.961782] (-) TimerEvent: {}
+[8.063372] (-) TimerEvent: {}
+[8.164810] (-) TimerEvent: {}
+[8.265976] (-) TimerEvent: {}
+[8.281989] (SCServo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[8.367039] (-) TimerEvent: {}
+[8.468449] (-) TimerEvent: {}
+[8.569904] (-) TimerEvent: {}
+[8.671538] (-) TimerEvent: {}
+[8.772907] (-) TimerEvent: {}
+[8.875910] (-) TimerEvent: {}
+[8.977774] (-) TimerEvent: {}
+[9.079793] (-) TimerEvent: {}
+[9.181702] (-) TimerEvent: {}
+[9.283082] (-) TimerEvent: {}
+[9.384249] (-) TimerEvent: {}
+[9.485836] (-) TimerEvent: {}
+[9.587920] (-) TimerEvent: {}
+[9.691954] (-) TimerEvent: {}
+[9.794908] (-) TimerEvent: {}
+[9.897682] (-) TimerEvent: {}
+[9.999915] (-) TimerEvent: {}
+[10.059081] (SCServo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[10.100936] (-) TimerEvent: {}
+[10.202934] (-) TimerEvent: {}
+[10.304592] (-) TimerEvent: {}
+[10.335167] (SCServo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[10.405660] (-) TimerEvent: {}
+[10.507479] (-) TimerEvent: {}
+[10.610074] (-) TimerEvent: {}
+[10.619819] (SCServo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[10.710864] (-) TimerEvent: {}
+[10.812709] (-) TimerEvent: {}
+[10.915682] (-) TimerEvent: {}
+[10.977906] (SCServo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.016874] (-) TimerEvent: {}
+[11.119146] (-) TimerEvent: {}
+[11.221785] (-) TimerEvent: {}
+[11.324527] (-) TimerEvent: {}
+[11.425920] (-) TimerEvent: {}
+[11.446148] (SCServo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.526986] (-) TimerEvent: {}
+[11.629444] (-) TimerEvent: {}
+[11.731628] (-) TimerEvent: {}
+[11.835196] (-) TimerEvent: {}
+[11.937648] (-) TimerEvent: {}
+[12.039673] (-) TimerEvent: {}
+[12.140952] (-) TimerEvent: {}
+[12.242812] (-) TimerEvent: {}
+[12.345479] (-) TimerEvent: {}
+[12.452496] (-) TimerEvent: {}
+[12.553825] (-) TimerEvent: {}
+[12.655824] (-) TimerEvent: {}
+[12.757204] (-) TimerEvent: {}
+[12.860537] (-) TimerEvent: {}
+[12.963235] (-) TimerEvent: {}
+[13.019613] (SCServo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[13.064598] (-) TimerEvent: {}
+[13.160457] (SCServo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[13.165640] (-) TimerEvent: {}
+[13.268435] (-) TimerEvent: {}
+[13.369750] (-) TimerEvent: {}
+[13.476937] (-) TimerEvent: {}
+[13.578894] (-) TimerEvent: {}
+[13.681411] (-) TimerEvent: {}
+[13.785597] (-) TimerEvent: {}
+[13.887032] (-) TimerEvent: {}
+[13.988562] (-) TimerEvent: {}
+[14.089840] (-) TimerEvent: {}
+[14.190949] (-) TimerEvent: {}
+[14.292657] (-) TimerEvent: {}
+[14.394441] (-) TimerEvent: {}
+[14.495774] (-) TimerEvent: {}
+[14.598025] (-) TimerEvent: {}
+[14.699647] (-) TimerEvent: {}
+[14.800823] (-) TimerEvent: {}
+[14.903140] (-) TimerEvent: {}
+[15.004980] (-) TimerEvent: {}
+[15.106569] (-) TimerEvent: {}
+[15.208544] (-) TimerEvent: {}
+[15.281958] (SCServo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[15.309186] (-) TimerEvent: {}
+[15.410986] (-) TimerEvent: {}
+[15.512225] (-) TimerEvent: {}
+[15.609371] (SCServo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[15.612647] (-) TimerEvent: {}
+[15.714230] (-) TimerEvent: {}
+[15.816922] (-) TimerEvent: {}
+[15.918645] (-) TimerEvent: {}
+[16.021382] (-) TimerEvent: {}
+[16.124037] (-) TimerEvent: {}
+[16.212330] (SCServo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[16.224791] (-) TimerEvent: {}
+[16.326989] (-) TimerEvent: {}
+[16.429137] (-) TimerEvent: {}
+[16.530901] (-) TimerEvent: {}
+[16.632884] (-) TimerEvent: {}
+[16.651811] (SCServo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[16.734590] (-) TimerEvent: {}
+[16.837319] (-) TimerEvent: {}
+[16.939780] (-) TimerEvent: {}
+[17.041693] (-) TimerEvent: {}
+[17.143316] (-) TimerEvent: {}
+[17.244628] (-) TimerEvent: {}
+[17.345997] (-) TimerEvent: {}
+[17.447961] (-) TimerEvent: {}
+[17.549719] (-) TimerEvent: {}
+[17.651535] (-) TimerEvent: {}
+[17.752814] (-) TimerEvent: {}
+[17.854969] (-) TimerEvent: {}
+[17.895974] (SCServo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[17.896593] (SCServo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[17.955811] (-) TimerEvent: {}
+[18.058639] (-) TimerEvent: {}
+[18.160545] (-) TimerEvent: {}
+[18.262244] (-) TimerEvent: {}
+[18.363499] (-) TimerEvent: {}
+[18.466308] (-) TimerEvent: {}
+[18.568787] (-) TimerEvent: {}
+[18.671097] (-) TimerEvent: {}
+[18.773859] (-) TimerEvent: {}
+[18.876412] (-) TimerEvent: {}
+[18.978511] (-) TimerEvent: {}
+[19.080627] (-) TimerEvent: {}
+[19.116287] (SCServo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[19.128014] (SCServo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[19.184561] (-) TimerEvent: {}
+[19.285905] (-) TimerEvent: {}
+[19.387769] (-) TimerEvent: {}
+[19.489937] (-) TimerEvent: {}
+[19.591516] (-) TimerEvent: {}
+[19.692467] (-) TimerEvent: {}
+[19.794099] (-) TimerEvent: {}
+[19.897370] (-) TimerEvent: {}
+[19.999511] (-) TimerEvent: {}
+[20.102033] (-) TimerEvent: {}
+[20.205141] (-) TimerEvent: {}
+[20.308240] (-) TimerEvent: {}
+[20.411188] (-) TimerEvent: {}
+[20.514069] (-) TimerEvent: {}
+[20.597482] (SCServo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[20.615096] (-) TimerEvent: {}
+[20.717588] (-) TimerEvent: {}
+[20.819327] (-) TimerEvent: {}
+[20.922492] (-) TimerEvent: {}
+[20.949833] (SCServo) StderrLine: {'line': b'WARNING: Package name "SCServo" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[21.023491] (-) TimerEvent: {}
+[21.124743] (-) TimerEvent: {}
+[21.226590] (-) TimerEvent: {}
+[21.327896] (-) TimerEvent: {}
+[21.429900] (-) TimerEvent: {}
+[21.531527] (-) TimerEvent: {}
+[21.633342] (-) TimerEvent: {}
+[21.736779] (-) TimerEvent: {}
+[21.839656] (-) TimerEvent: {}
+[21.942100] (-) TimerEvent: {}
+[22.045000] (-) TimerEvent: {}
+[22.146580] (-) TimerEvent: {}
+[22.178224] (SCServo) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[22.178876] (SCServo) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/include\n'}
+[22.180818] (SCServo) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[22.230722] (SCServo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[22.247224] (-) TimerEvent: {}
+[22.328811] (SCServo) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[22.330065] (SCServo) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[22.348310] (-) TimerEvent: {}
+[22.358346] (SCServo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[22.415764] (SCServo) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.449757] (-) TimerEvent: {}
+[22.501597] (SCServo) StdoutLine: {'line': b'-- Generating done\n'}
+[22.510694] (SCServo) StdoutLine: {'line': b'-- Build files have been written to: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo\n'}
+[22.550490] (-) TimerEvent: {}
+[22.569190] (SCServo) CommandEnded: {'returncode': 0}
+[22.571152] (SCServo) JobProgress: {'identifier': 'SCServo', 'progress': 'build'}
+[22.581706] (SCServo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo', '--', '-j4', '-l4'], 'cwd': '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wheeltec'), ('SSH_CLIENT', '192.168.1.122 64373 22'), ('ROS_PACKAGE_PATH', '/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors/lib:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_slam/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_odom/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_util/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_sync/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib:/home/wheeltec/rtabmap_ws/install/rtabmap/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec/wheeltec_ros2/src/FT'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7b584093-e02d-4536-829c-ebd02e3cdb1f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install:/home/wheeltec/rtabmap_ws/install:/home/wheeltec/wheeltec_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wheeltec'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap/lib/x86_64-linux-gnu/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '22'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/remote-cli:/home/wheeltec/rtabmap_ws/install/rtabmap/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8888643f5c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rviz2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap_ros:/home/wheeltec/rtabmap_ws/install/rtabmap_launch:/home/wheeltec/rtabmap_ws/install/rtabmap_examples:/home/wheeltec/rtabmap_ws/install/rtabmap_demos:/home/wheeltec/rtabmap_ws/install/rtabmap_viz:/home/wheeltec/rtabmap_ws/install/rtabmap_slam:/home/wheeltec/rtabmap_ws/install/rtabmap_odom:/home/wheeltec/rtabmap_ws/install/rtabmap_util:/home/wheeltec/rtabmap_ws/install/rtabmap_sync:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins:/home/wheeltec/rtabmap_ws/install/rtabmap_python:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.122 64373 192.168.1.160 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/rtabmap_ws/build/rtabmap_python:/home/wheeltec/rtabmap_ws/install/rtabmap_python/lib/python3.10/site-packages:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rviz2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap_ros:/home/wheeltec/rtabmap_ws/install/rtabmap_launch:/home/wheeltec/rtabmap_ws/install/rtabmap_examples:/home/wheeltec/rtabmap_ws/install/rtabmap_demos:/home/wheeltec/rtabmap_ws/install/rtabmap_viz:/home/wheeltec/rtabmap_ws/install/rtabmap_slam:/home/wheeltec/rtabmap_ws/install/rtabmap_odom:/home/wheeltec/rtabmap_ws/install/rtabmap_util:/home/wheeltec/rtabmap_ws/install/rtabmap_sync:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/rtabmap_ws/install/rtabmap_python:/opt/ros/humble:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap')]), 'shell': False}
+[22.653964] (-) TimerEvent: {}
+[22.755745] (-) TimerEvent: {}
+[22.858825] (-) TimerEvent: {}
+[22.960295] (-) TimerEvent: {}
+[23.061552] (-) TimerEvent: {}
+[23.163326] (-) TimerEvent: {}
+[23.264866] (-) TimerEvent: {}
+[23.366012] (-) TimerEvent: {}
+[23.469727] (-) TimerEvent: {}
+[23.571032] (-) TimerEvent: {}
+[23.621725] (SCServo) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/SCServo.dir/src/SCS.cpp.o\x1b[0m\n'}
+[23.626659] (SCServo) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/SCServo.dir/src/SCSerial.cpp.o\x1b[0m\n'}
+[23.627300] (SCServo) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/SCServo.dir/src/SCSCL.cpp.o\x1b[0m\n'}
+[23.673545] (-) TimerEvent: {}
+[23.695181] (SCServo) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/SCServo.dir/src/SMSBL.cpp.o\x1b[0m\n'}
+[23.773914] (-) TimerEvent: {}
+[23.877639] (-) TimerEvent: {}
+[23.980631] (-) TimerEvent: {}
+[24.083507] (-) TimerEvent: {}
+[24.188653] (-) TimerEvent: {}
+[24.199604] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SCSCL.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SCSCL::SyncWritePos(u8*, u8, u16*, u16*, u16*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.199974] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SCSCL.cpp:45:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Koffbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.200854] (SCServo) StderrLine: {'line': b'   45 |     u8 \x1b[01;35m\x1b[Koffbuf\x1b[m\x1b[K[IDN][6];\n'}
+[24.204000] (SCServo) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[24.296638] (-) TimerEvent: {}
+[24.381484] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSBL.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SMSBL::SyncWritePosEx(u8*, u8, s16*, u16*, u8*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.383995] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSBL.cpp:56:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Koffbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.384328] (SCServo) StderrLine: {'line': b'   56 |     u8 \x1b[01;35m\x1b[Koffbuf\x1b[m\x1b[K[IDN][7];\n'}
+[24.384955] (SCServo) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[24.394838] (SCServo) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/SCServo.dir/src/SMSCL.cpp.o\x1b[0m\n'}
+[24.397384] (-) TimerEvent: {}
+[24.500461] (-) TimerEvent: {}
+[24.507656] (SCServo) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/SCServo.dir/src/SMS_STS.cpp.o\x1b[0m\n'}
+[24.600922] (-) TimerEvent: {}
+[24.702688] (-) TimerEvent: {}
+[24.804343] (-) TimerEvent: {}
+[24.905390] (-) TimerEvent: {}
+[24.947489] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSCL.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SMSCL::SyncWritePosEx(u8*, u8, s16*, u16*, u8*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.949107] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMSCL.cpp:55:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Koffbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.949685] (SCServo) StderrLine: {'line': b'   55 |     u8 \x1b[01;35m\x1b[Koffbuf\x1b[m\x1b[K[IDN][7];\n'}
+[24.949944] (SCServo) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[25.006112] (-) TimerEvent: {}
+[25.078699] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMS_STS.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void SMS_STS::SyncWritePosEx(u8*, u8, s16*, u16*, u8*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.079845] (SCServo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/src/SMS_STS.cpp:56:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Koffbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.081088] (SCServo) StderrLine: {'line': b'   56 |     u8 \x1b[01;35m\x1b[Koffbuf\x1b[m\x1b[K[IDN][7];\n'}
+[25.081880] (SCServo) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[25.106790] (-) TimerEvent: {}
+[25.208302] (-) TimerEvent: {}
+[25.312095] (-) TimerEvent: {}
+[25.396062] (SCServo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libSCServo.a\x1b[0m\n'}
+[25.412915] (-) TimerEvent: {}
+[25.515392] (-) TimerEvent: {}
+[25.616882] (-) TimerEvent: {}
+[25.718714] (-) TimerEvent: {}
+[25.822107] (-) TimerEvent: {}
+[25.924270] (-) TimerEvent: {}
+[26.015521] (SCServo) StdoutLine: {'line': b'[100%] Built target SCServo\n'}
+[26.024935] (-) TimerEvent: {}
+[26.126219] (-) TimerEvent: {}
+[26.177572] (SCServo) CommandEnded: {'returncode': 0}
+[26.227374] (-) TimerEvent: {}
+[26.329387] (-) TimerEvent: {}
+[26.431980] (-) TimerEvent: {}
+[26.533629] (-) TimerEvent: {}
+[26.634917] (-) TimerEvent: {}
+[26.736506] (-) TimerEvent: {}
+[26.837681] (-) TimerEvent: {}
+[26.939798] (-) TimerEvent: {}
+[27.041534] (-) TimerEvent: {}
+[27.144458] (-) TimerEvent: {}
+[27.247466] (-) TimerEvent: {}
+[27.349718] (-) TimerEvent: {}
+[27.452455] (-) TimerEvent: {}
+[27.554895] (-) TimerEvent: {}
+[27.625808] (SCServo) JobProgress: {'identifier': 'SCServo', 'progress': 'install'}
+[27.655517] (-) TimerEvent: {}
+[27.757666] (-) TimerEvent: {}
+[27.787525] (SCServo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo'], 'cwd': '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wheeltec'), ('SSH_CLIENT', '192.168.1.122 64373 22'), ('ROS_PACKAGE_PATH', '/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors/lib:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_slam/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_odom/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_util/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_sync/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions/lib:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib:/home/wheeltec/rtabmap_ws/install/rtabmap/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec/wheeltec_ros2/src/FT'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7b584093-e02d-4536-829c-ebd02e3cdb1f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install:/home/wheeltec/rtabmap_ws/install:/home/wheeltec/wheeltec_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wheeltec'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/lib/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap/lib/x86_64-linux-gnu/pkgconfig:/home/wheeltec/rtabmap_ws/install/rtabmap/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '22'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/wheeltec/.vscode-server/cli/servers/Stable-e3a5acfb517a443235981655413d566533107e92/server/bin/remote-cli:/home/wheeltec/rtabmap_ws/install/rtabmap/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8888643f5c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rviz2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap_ros:/home/wheeltec/rtabmap_ws/install/rtabmap_launch:/home/wheeltec/rtabmap_ws/install/rtabmap_examples:/home/wheeltec/rtabmap_ws/install/rtabmap_demos:/home/wheeltec/rtabmap_ws/install/rtabmap_viz:/home/wheeltec/rtabmap_ws/install/rtabmap_slam:/home/wheeltec/rtabmap_ws/install/rtabmap_odom:/home/wheeltec/rtabmap_ws/install/rtabmap_util:/home/wheeltec/rtabmap_ws/install/rtabmap_sync:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins:/home/wheeltec/rtabmap_ws/install/rtabmap_python:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/build/SCServo'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.122 64373 192.168.1.160 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.10/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/local/lib/python3.10/dist-packages:/home/wheeltec/rtabmap_ws/build/rtabmap_python:/home/wheeltec/rtabmap_ws/install/rtabmap_python/lib/python3.10/site-packages:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rviz2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_constrained_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_behaviors:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/nav2_collision_monitor:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_velocity_smoother:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap_ros:/home/wheeltec/rtabmap_ws/install/rtabmap_launch:/home/wheeltec/rtabmap_ws/install/rtabmap_examples:/home/wheeltec/rtabmap_ws/install/rtabmap_demos:/home/wheeltec/rtabmap_ws/install/rtabmap_viz:/home/wheeltec/rtabmap_ws/install/rtabmap_slam:/home/wheeltec/rtabmap_ws/install/rtabmap_odom:/home/wheeltec/rtabmap_ws/install/rtabmap_util:/home/wheeltec/rtabmap_ws/install/rtabmap_sync:/home/wheeltec/rtabmap_ws/install/rtabmap_rviz_plugins:/home/wheeltec/rtabmap_ws/install/rtabmap_conversions:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/rtabmap_ws/install/rtabmap_python:/opt/ros/humble:/home/wheeltec/rtabmap_ws/install/rtabmap_msgs:/home/wheeltec/rtabmap_ws/install/rtabmap')]), 'shell': False}
+[27.858433] (-) TimerEvent: {}
+[27.927766] (SCServo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.930181] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include\n'}
+[27.930815] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SCSerial.h\n'}
+[27.931942] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SMS_STS.h\n'}
+[27.933633] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SMSBL.h\n'}
+[27.935034] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SCServo.h\n'}
+[27.936690] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SCSCL.h\n'}
+[27.938390] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SMSCL.h\n'}
+[27.940080] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/SCS.h\n'}
+[27.942606] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/include/INST.h\n'}
+[27.944328] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/lib/libSCServo.a\n'}
+[27.949039] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/environment/library_path.sh\n'}
+[27.949708] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/environment/library_path.dsv\n'}
+[27.951693] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/ament_index/resource_index/package_run_dependencies/SCServo\n'}
+[27.953706] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/ament_index/resource_index/parent_prefix_path/SCServo\n'}
+[27.956785] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/environment/ament_prefix_path.sh\n'}
+[27.958101] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/environment/ament_prefix_path.dsv\n'}
+[27.958807] (-) TimerEvent: {}
+[27.960995] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/environment/path.sh\n'}
+[27.962269] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/environment/path.dsv\n'}
+[27.963450] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/local_setup.bash\n'}
+[27.965037] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/local_setup.sh\n'}
+[27.968766] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/local_setup.zsh\n'}
+[27.970095] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/local_setup.dsv\n'}
+[27.970692] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/package.dsv\n'}
+[27.973157] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/ament_index/resource_index/packages/SCServo\n'}
+[27.975023] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/export_SCServoExport.cmake\n'}
+[27.976127] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/export_SCServoExport-noconfig.cmake\n'}
+[27.977604] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[27.979368] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[27.980793] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[27.984604] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/SCServoConfig.cmake\n'}
+[27.984930] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/cmake/SCServoConfig-version.cmake\n'}
+[27.985214] (SCServo) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/FTmotor/install/SCServo/share/SCServo/package.xml\n'}
+[27.996114] (SCServo) CommandEnded: {'returncode': 0}
+[28.059898] (-) TimerEvent: {}
+[28.162512] (-) TimerEvent: {}
+[28.266742] (-) TimerEvent: {}
+[28.369077] (-) TimerEvent: {}
+[28.472997] (-) TimerEvent: {}
+[28.574744] (-) TimerEvent: {}
+[28.676175] (-) TimerEvent: {}
+[28.778549] (-) TimerEvent: {}
+[28.880993] (-) TimerEvent: {}
+[28.982764] (-) TimerEvent: {}
+[29.084255] (-) TimerEvent: {}
+[29.185173] (-) TimerEvent: {}
+[29.286165] (-) TimerEvent: {}
+[29.389032] (-) TimerEvent: {}
+[29.492038] (-) TimerEvent: {}
+[29.520089] (SCServo) JobEnded: {'identifier': 'SCServo', 'rc': 0}
+[29.524953] (-) EventReactorShutdown: {}

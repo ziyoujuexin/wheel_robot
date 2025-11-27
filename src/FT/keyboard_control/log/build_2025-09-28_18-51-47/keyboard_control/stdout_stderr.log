@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target keyboard_control[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/keyboard_control.dir/src/keyboard_control.cpp.o[0m
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:28:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   28 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:[m[K In constructor ‘[01m[KftNode::ftNode()[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:20:106:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   20 |         ftSubscription = this->create_subscription<std_msgs::msg::Int32>("/ftplace",10,std::bind(ftNode::[01;31m[K&[m[KftSubCallback,this,std::placeholders::_1));
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:[m[K At global scope:
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:129:1:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KftSubCallback[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  129 | [01;31m[KftNode[m[K::ftSubCallback(const std_msgs::msg::Int32::SharedPtr msg)
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:129:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint ftNode::ftSubCallback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:24:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid ftNode::ftSubCallback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’
+   24 |     void [01;36m[KftSubCallback[m[K(const std_msgs::msg::Int32::SharedPtr msg);
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/src/keyboard_control.cpp:15:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ftNode[m[K’ defined here
+   15 | class [01;36m[KftNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/keyboard_control.dir/build.make:76: CMakeFiles/keyboard_control.dir/src/keyboard_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

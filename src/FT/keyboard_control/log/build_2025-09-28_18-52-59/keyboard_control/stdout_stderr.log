@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target keyboard_control[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/keyboard_control.dir/src/keyboard_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable keyboard_control[0m
+[100%] Built target keyboard_control
+-- Install configuration: ""
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/include
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/include/keyboard_control
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/lib/keyboard_control/keyboard_control
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/lib/keyboard_control/keyboard_control" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/ament_index/resource_index/package_run_dependencies/keyboard_control
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/ament_index/resource_index/parent_prefix_path/keyboard_control
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/environment/path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/environment/path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/local_setup.bash
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/local_setup.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/local_setup.zsh
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/local_setup.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/package.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/ament_index/resource_index/packages/keyboard_control
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/cmake/export_keyboard_controlExport.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/cmake/export_keyboard_controlExport-noconfig.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig-version.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/src/FT/keyboard_control/install/keyboard_control/share/keyboard_control/package.xml

@@ -1,0 +1,10 @@
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/uninstall.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/screen_ctrl_uninstall.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/screen_node.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/test.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/edit_cache.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/rebuild_cache.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/list_install_components.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/install.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/install/local.dir
+/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/install/strip.dir

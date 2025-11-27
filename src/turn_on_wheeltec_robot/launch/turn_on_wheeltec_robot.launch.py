@@ -143,11 +143,11 @@ def generate_launch_description():
     )
     
     # YOLO启动
-    # yolo_launch = None
-    # if yolo_launch_file and os.path.exists(yolo_launch_file):
-    #     yolo_launch = IncludeLaunchDescription(
-    #         PythonLaunchDescriptionSource(yolo_launch_file),
-    #     )
+    yolo_launch = None
+    if yolo_launch_file and os.path.exists(yolo_launch_file):
+        yolo_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(yolo_launch_file),
+        )
     
     # 摄像头启动
     camera_launch = IncludeLaunchDescription(
@@ -173,8 +173,8 @@ def generate_launch_description():
    # ld.add_action(motor_model_node)
     
     # 添加YOLO和摄像头启动
-    # if yolo_launch:
-    #     ld.add_action(yolo_launch)
+    if yolo_launch:
+        ld.add_action(yolo_launch)
     ld.add_action(camera_launch)
     
     # 添加web_video_server节点

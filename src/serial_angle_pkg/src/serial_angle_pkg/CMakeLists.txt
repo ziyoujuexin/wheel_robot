@@ -11,13 +11,13 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(std_msgs REQUIRED)  # 添加 std_msgs 依赖
-
-# 查找 serial 库
 find_package(serial REQUIRED)  # 或者使用 pkg-config 方式，具体取决于您的安装方式
-
 find_package(rclcpp REQUIRED)
+
 add_executable(serial_angle_node src/serial_angle_node.cpp)
 ament_target_dependencies(serial_angle_node rclcpp std_msgs serial)
+
+
 install(TARGETS
 serial_angle_node
 DESTINATION lib/${PROJECT_NAME}

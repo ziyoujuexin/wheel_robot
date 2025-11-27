@@ -30,6 +30,25 @@ def generate_launch_description():
                     }
                 ],
                 output="screen",
+            ),
+            Node(
+                package="sound_track",
+                executable="sound_track_controller",
+                name="sound_track_controller",
+                parameters=[
+                    {
+                        "state_topic": "sound_track_state",
+                        "angle_topic": "awake_angle",
+                        "range_topic": "/tf_nova/range",
+                        "cmd_vel_topic": "cmd_vel",
+                        "angular_speed": 0.5,
+                        "linear_speed": 0.1,
+                        "stop_range": 0.3,
+                        "forward_timeout": 5.0,
+                        "control_rate": 20.0,
+                    }
+                ],
+                output="screen",
             )
         ]
     )

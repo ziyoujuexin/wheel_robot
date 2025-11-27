@@ -28,4 +28,11 @@ def generate_launch_description():
             parameters=[param_file],
             output='screen'
         ),
+        Node(
+            package='screen_ctrl',
+            executable='screen_node',
+            name='screen_node',
+            output='screen',
+            parameters=[param_file],
+        ),
     ])

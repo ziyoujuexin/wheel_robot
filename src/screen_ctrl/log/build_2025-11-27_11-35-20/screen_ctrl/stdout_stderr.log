@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target screen_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/screen_node.dir/src/screen_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable screen_node[0m
+[100%] Built target screen_node
+-- Install configuration: ""
+-- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/lib/screen_ctrl/screen_node
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/lib/screen_ctrl/screen_node" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/ament_index/resource_index/package_run_dependencies/screen_ctrl
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/ament_index/resource_index/parent_prefix_path/screen_ctrl
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/ament_prefix_path.sh
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/path.sh
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/path.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.bash
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.sh
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.zsh
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/ament_index/resource_index/packages/screen_ctrl
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/cmake/screen_ctrlConfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/cmake/screen_ctrlConfig-version.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.xml

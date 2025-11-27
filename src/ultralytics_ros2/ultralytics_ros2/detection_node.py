@@ -106,7 +106,7 @@ class YOLOPersonTracker(Node):
             self.get_logger().info("切换到睡眠模式")
             # 发布停止命令
             stop_cmd = Twist()
-            self.pub_cmd_vel.publish(stop_cmd)
+            # self.pub_cmd_vel.publish(stop_cmd)
             self.last_cmd_vel = stop_cmd
         elif self.mode == 2:
             self.get_logger().info("切换到跟随模式")

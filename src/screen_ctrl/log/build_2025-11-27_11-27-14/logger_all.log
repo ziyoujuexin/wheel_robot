@@ -1,0 +1,79 @@
+[0.407s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.407s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffba33d180>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffba33cbb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffba33cbb0>>)
+[0.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.965s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.999s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'screen_ctrl'
+[0.999s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.111s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 100 installed packages in /home/wheeltec/wheeltec_ros2/install
+[1.116s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 330 installed packages in /opt/ros/humble
+[1.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.285s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'cmake_args' from command line to 'None'
+[1.285s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'cmake_target' from command line to 'None'
+[1.285s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.286s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'cmake_clean_cache' from command line to 'False'
+[1.286s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'cmake_clean_first' from command line to 'False'
+[1.286s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'cmake_force_configure' from command line to 'False'
+[1.286s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'ament_cmake_args' from command line to 'None'
+[1.286s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'catkin_cmake_args' from command line to 'None'
+[1.286s] Level 5:colcon.colcon_core.verb:set package 'screen_ctrl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.286s] DEBUG:colcon.colcon_core.verb:Building package 'screen_ctrl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl', 'merge_install': False, 'path': '/home/wheeltec/wheeltec_ros2/src/screen_ctrl', 'symlink_install': False, 'test_result_base': None}
+[1.286s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.290s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.291s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl' with build type 'ament_cmake'
+[1.291s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl'
+[1.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.301s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.301s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/screen_ctrl -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl
+[5.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/screen_ctrl -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl
+[5.872s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(screen_ctrl)
+[5.882s] Level 1:colcon.colcon_core.environment:checking '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl' for CMake module files
+[5.883s] Level 1:colcon.colcon_core.environment:checking '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl' for CMake config files
+[5.884s] Level 1:colcon.colcon_core.environment:checking '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/bin'
+[5.884s] Level 1:colcon.colcon_core.environment:checking '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/lib/pkgconfig/screen_ctrl.pc'
+[5.884s] Level 1:colcon.colcon_core.environment:checking '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/lib/python3.10/site-packages'
+[5.885s] Level 1:colcon.colcon_core.environment:checking '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/bin'
+[5.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.ps1'
+[5.888s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.dsv'
+[5.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.sh'
+[5.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.bash'
+[5.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.zsh'
+[5.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/colcon-core/packages/screen_ctrl)
+[5.905s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.905s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[5.906s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.924s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.924s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.925s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.965s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.966s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/local_setup.ps1'
+[5.968s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/_local_setup_util_ps1.py'
+[5.971s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/setup.ps1'
+[5.983s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/local_setup.sh'
+[5.984s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/_local_setup_util_sh.py'
+[5.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/setup.sh'
+[5.996s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/local_setup.bash'
+[5.998s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/setup.bash'
+[6.008s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/local_setup.zsh'
+[6.009s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/setup.zsh'

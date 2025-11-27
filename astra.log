@@ -1,0 +1,43 @@
+2025-03-26 15:18:55,592 ERROR [astra] Body Tracking Error: 0x500153e9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-16 10:08:34,525 ERROR [astra] Body Tracking Error: 0x50001409 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-16 10:12:41,290 ERROR [astra] Body Tracking Error: 0x50000da9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-16 10:14:15,370 ERROR [astra] Body Tracking Error: 0x50000b59 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-16 10:14:39,544 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/32": Failed to set USB interface!
+
+2025-09-18 14:06:10,139 ERROR [astra] Body Tracking Error: 0x50000e39 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-18 14:15:29,271 ERROR [astra] Body Tracking Error: 0x50000ef9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-18 14:49:21,474 ERROR [astra] Body Tracking Error: 0x50000c29 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-19 18:11:13,396 ERROR [astra] Body Tracking Error: 0x50001259 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 11:55:27,726 ERROR [astra] Body Tracking Error: 0x50002069 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:44:23,459 ERROR [astra] Body Tracking Error: 0x50000ba9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:45:46,533 ERROR [astra] Body Tracking Error: 0x50000919 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:45:59,453 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/24": The Xiron USB subsystem failed to initialize!
+
+2025-09-29 13:45:59,686 ERROR [astra] Body Tracking Error: 0x50000d99 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:46:21,669 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/24": The Xiron USB subsystem failed to initialize!
+
+2025-09-29 13:46:21,829 ERROR [astra] Body Tracking Error: 0x50000959 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:47:37,522 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/24": The Xiron USB subsystem failed to initialize!
+
+2025-09-29 13:47:37,700 ERROR [astra] Body Tracking Error: 0x50000909 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:48:03,531 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/24": The Xiron USB subsystem failed to initialize!
+
+2025-09-29 13:48:03,722 ERROR [astra] Body Tracking Error: 0x500008f9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-29 13:51:02,626 ERROR [astra] Body Tracking Error: 0x500010b9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-30 13:44:37,241 ERROR [astra] Body Tracking Error: 0x50000ee9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-30 15:25:45,057 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/14": Failed to set USB interface!
+
+2025-09-30 15:25:50,093 ERROR [astra] Body Tracking Error: 0x50012399 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-30 15:48:41,623 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/14": Failed to set USB interface!
+
+2025-09-30 15:48:45,653 ERROR [astra] Body Tracking Error: 0x5000e6e9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-30 15:53:46,143 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/14": Failed to set USB interface!
+
+2025-09-30 15:53:56,545 ERROR [astra] Body Tracking Error: 0x50026e59 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-09-30 15:56:37,744 ERROR [orbbec.ni.device_streamset] failed to open device: 	Could not open "2bc5/0614@1/14": Failed to set USB interface!
+
+2025-09-30 15:56:42,877 ERROR [astra] Body Tracking Error: 0x500116d9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-10-21 13:54:43,420 ERROR [astra] Body Tracking Error: 0x50000f69 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-10-21 16:34:32,823 ERROR [astra] Body Tracking Error: 0x50003e59 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-10-21 17:00:08,787 ERROR [astra] Body Tracking Error: 0x500032d9 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.
+2025-10-27 10:36:10,511 ERROR [astra] Body Tracking Error: 0x50003c99 Invalid Orbbec Body Tracking license. Please purchase Orbbec Body Tracking License.

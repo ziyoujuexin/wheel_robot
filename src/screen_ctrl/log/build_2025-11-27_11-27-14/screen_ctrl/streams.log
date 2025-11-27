@@ -1,0 +1,51 @@
+[0.039s] Invoking command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/screen_ctrl -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl
+[0.314s] -- The C compiler identification is GNU 11.4.0
+[0.494s] -- The CXX compiler identification is GNU 11.4.0
+[0.516s] -- Detecting C compiler ABI info
+[0.670s] -- Detecting C compiler ABI info - done
+[0.682s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.683s] -- Detecting C compile features
+[0.684s] -- Detecting C compile features - done
+[0.691s] -- Detecting CXX compiler ABI info
+[0.861s] -- Detecting CXX compiler ABI info - done
+[0.875s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.875s] -- Detecting CXX compile features
+[0.875s] -- Detecting CXX compile features - done
+[0.913s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.398s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.964s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[2.222s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.271s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.330s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.413s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.515s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.623s] -- Found serial: 1.2.1 (/home/wheeltec/wheeltec_ros2/install/serial/share/serial/cmake)
+[2.649s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.914s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.948s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.246s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.332s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.466s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.548s] -- Looking for pthread.h
+[3.689s] -- Looking for pthread.h - found
+[3.690s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.861s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.864s] -- Found Threads: TRUE  
+[4.090s] [31mCMake Error at CMakeLists.txt:29 (target_include_directories):
+[4.090s]   Cannot specify include directories for target "motorModel" which is not
+[4.090s]   built by this project.
+[4.090s] 
+[4.090s] [0m
+[4.113s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.480s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.480s] -- Configured cppcheck include dirs: 
+[4.480s] -- Configured cppcheck exclude dirs and/or files: 
+[4.487s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.494s] -- Added test 'lint_cmake' to check CMake code style
+[4.505s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.516s] -- Added test 'uncrustify' to check C / C++ code style
+[4.516s] -- Configured uncrustify additional arguments: 
+[4.522s] -- Added test 'xmllint' to check XML markup files
+[4.533s] -- Configuring incomplete, errors occurred!
+[4.533s] See also "/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl/CMakeFiles/CMakeOutput.log".
+[4.558s] Invoked command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/screen_ctrl -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl

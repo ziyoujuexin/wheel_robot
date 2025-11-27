@@ -13,6 +13,7 @@ find_package(ft_driver REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(ftmsg REQUIRED)
+find_package(wheeltec_mic_msg REQUIRED)
 
 add_executable(motorModel src/motorModel.cpp)
 
@@ -25,6 +26,7 @@ ament_target_dependencies(
   ft_driver
   scservo
   ftmsg
+  wheeltec_mic_msg
   geometry_msgs
 )
 

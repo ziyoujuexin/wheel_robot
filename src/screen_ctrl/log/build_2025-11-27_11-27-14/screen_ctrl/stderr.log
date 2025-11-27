@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:29 (target_include_directories):
+  Cannot specify include directories for target "motorModel" which is not
+  built by this project.
+
+[0m

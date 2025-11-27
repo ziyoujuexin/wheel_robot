@@ -1,0 +1,63 @@
+[0.037s] Invoking command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/screen_ctrl -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl
+[0.088s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.481s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.556s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.562s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.578s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.611s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.651s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.714s] -- Found serial: 1.2.1 (/home/wheeltec/wheeltec_ros2/install/serial/share/serial/cmake)
+[0.718s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.781s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.794s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.095s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.250s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.453s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.453s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/wheeltec/wheeltec_ros2/src/screen_ctrl/include>
+[1.453s] -- Configured cppcheck exclude dirs and/or files: 
+[1.455s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.458s] -- Added test 'lint_cmake' to check CMake code style
+[1.460s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.471s] -- Added test 'uncrustify' to check C / C++ code style
+[1.472s] -- Configured uncrustify additional arguments: 
+[1.473s] -- Added test 'xmllint' to check XML markup files
+[1.476s] -- Configuring done
+[1.501s] -- Generating done
+[1.509s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl
+[1.529s] Invoked command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/screen_ctrl -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl
+[1.533s] Invoking command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl -- -j6 -l6
+[1.616s] [ 50%] [32mBuilding CXX object CMakeFiles/screen_node.dir/src/screen_control.cpp.o[0m
+[7.108s] [01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:[m[K In member function ‘[01m[Kvoid ScreenNode::send_frame(uint8_t, const std::vector<unsigned char>&)[m[K’:
+[7.108s] [01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:9:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kframe_len[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.108s]     9 |     size_t [01;35m[Kframe_len[m[K = FRAME_LENGTH + payload_len;
+[7.108s]       |            [01;35m[K^~~~~~~~~[m[K
+[12.349s] [01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:[m[K In member function ‘[01m[Kvoid ScreenNode::modelSubCallback(std_msgs::msg::Int8_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.350s] [01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:77:23:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[12.350s]    77 |         [01;35m[Kplay_animation(animation[1])[m[K;
+[12.350s]       |         [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[12.350s] [01m[K/home/wheeltec/wheeltec_ros2/src/screen_ctrl/src/screen_control.cpp:78:5:[m[K [01;36m[Knote: [m[Khere
+[12.350s]    78 |     [01;36m[Kcase[m[K SAD:
+[12.350s]       |     [01;36m[K^~~~[m[K
+[20.032s] [100%] [32m[1mLinking CXX executable screen_node[0m
+[20.898s] [100%] Built target screen_node
+[20.922s] Invoked command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl -- -j6 -l6
+[20.945s] Invoking command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl
+[20.960s] -- Install configuration: ""
+[20.961s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/lib/screen_ctrl/screen_node
+[20.969s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/lib/screen_ctrl/screen_node" to ""
+[20.970s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/ament_index/resource_index/package_run_dependencies/screen_ctrl
+[20.970s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/ament_index/resource_index/parent_prefix_path/screen_ctrl
+[20.971s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/ament_prefix_path.sh
+[20.971s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/ament_prefix_path.dsv
+[20.971s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/path.sh
+[20.971s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/environment/path.dsv
+[20.972s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.bash
+[20.972s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.sh
+[20.972s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.zsh
+[20.973s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/local_setup.dsv
+[20.973s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.dsv
+[20.973s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/ament_index/resource_index/packages/screen_ctrl
+[20.974s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/cmake/screen_ctrlConfig.cmake
+[20.974s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/cmake/screen_ctrlConfig-version.cmake
+[20.974s] -- Installing: /home/wheeltec/wheeltec_ros2/src/screen_ctrl/install/screen_ctrl/share/screen_ctrl/package.xml
+[20.980s] Invoked command in '/home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/ultralytics_ros2:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/sound_track:/home/wheeltec/wheeltec_ros2/install/people_follow:/home/wheeltec/wheeltec_ros2/install/ollama_ros_chat:/home/wheeltec/wheeltec_ros2/install/nmea_navsat_driver:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_cycle:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/src/screen_ctrl/build/screen_ctrl
