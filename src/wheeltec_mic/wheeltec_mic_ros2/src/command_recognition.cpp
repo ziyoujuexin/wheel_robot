@@ -248,14 +248,12 @@ void Command::voice_words_Callback(std_msgs::msg::String::SharedPtr msg){
 动作：寻找声源标志位置位
 ***********************************/
 	else if (str1 == str8){
-		motion_.linear_x = 0;
-		motion_.angular_z = 0;
-		motion_.cmd_vel_flag =0;
-		motion_.follow_flag = 1;
-		motion_msg_pub->publish(motion_);
+		std_msgs::msg::Int8 st_msg;
+		st_msg.data = 1;
+		sound_track_state_pub->publish(st_msg);
 		WHOLE = head + audio_path + "/search_voice.wav";
 		system(WHOLE.c_str());
-		cout<<"好的：小车寻找声源"<<endl;
+		cout<<"好的：小车寻找声源（声控追踪）"<<endl;
 	}
 /***********************************
 指令：小车去I点
@@ -423,6 +421,8 @@ Command::Command(const std::string &node_name,
 	awake_flag_pub = this->create_publisher<std_msgs::msg::Int8>("awake_flag",10); 
 	/***雷达跟随标志位话题发布者创建***/
 	laser_follow_flag_pub = this->create_publisher<std_msgs::msg::Int8>("laser_follow_flag",10); 
+    /***声控跟踪状态话题发布者创建***/
+	sound_track_state_pub = this->create_publisher<std_msgs::msg::Int8>("sound_track_state",10);
 	/***底盘运动信息话题发布者创建***/
 	motion_msg_pub = this->create_publisher<wheeltec_mic_msg::msg::MotionControl>("motion_msg",10);
 	/***导航点位置话题发布者创建***/

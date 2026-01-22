@@ -59,7 +59,6 @@ void Feedback::voice_words_Callback(const std_msgs::msg::String::SharedPtr msg){
 
 	if (str1 == str2){
 		node_kill("/laserfollower");
-		cmd_vel_pub->publish(geometry_msgs::msg::Twist());
 		sleep(1);
 		WHOLE = head + audio_path + "/rplidar_close.wav";
 		system(WHOLE.c_str());
@@ -73,8 +72,6 @@ Feedback::Feedback(const std::string &node_name)
 	/***声明参数并获取***/
 	this->declare_parameter<string>("audio_path","");
 	this->get_parameter("audio_path",audio_path);
-	/***速度话题发布者创建***/
-	cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
 	/***雷达跟随话题订阅者创建***/
 	laser_follow_sub = this->create_subscription<std_msgs::msg::Int8>(
 		"laser_follow_flag",10,std::bind(&Feedback::laser_follow_Callback,this,_1));

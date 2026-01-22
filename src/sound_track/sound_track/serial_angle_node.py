@@ -20,7 +20,10 @@ class SerialAngleNode(Node):
 
     def __init__(self) -> None:
         super().__init__("serial_angle_node")
-        self.declare_parameter("ports", "/dev/ttyCH343USB1,/dev/ttyCH343USB0,/dev/ttyCH343USB2")
+        self.declare_parameter(
+            "ports",
+            "/dev/ttyCH343USB1,/dev/ttyCH343USB0,/dev/ttyCH343USB2,/dev/ttyCH341USB0,/dev/ttyCH341USB1,/dev/ttyCH341USB2,/dev/ttyAMA0",
+        )
         self.declare_parameter("baud_rate", 115200)
         self.declare_parameter("regex_pattern", r"Detected Angle:\s*(\d+)")
         self.declare_parameter("output_topic", "awake_angle")
@@ -41,6 +44,7 @@ class SerialAngleNode(Node):
         self.last_angle_time = None
 
         self.serial_port: Optional[serial.Serial] = None
+        self.current_port_index = 0
         if serial is None:
             self.get_logger().error("python3-serial not installed; cannot read serial ports.")
         else:
@@ -50,12 +54,13 @@ class SerialAngleNode(Node):
         self.timer = self.create_timer(period, self._poll)
 
     def _open_first_available(self) -> None:
-        for port in self.ports:
+        for idx, port in enumerate(self.ports):
             try:
                 self.get_logger().info(f"尝试打开串口: {port}")
                 sp = serial.Serial(port=port, baudrate=self.baud, timeout=0.1)
                 if sp.is_open:
                     self.serial_port = sp
+                    self.current_port_index = idx
                     self.get_logger().info(f"串口打开成功: {port}")
                     return
             except Exception as e:  # noqa: BLE001
@@ -63,7 +68,10 @@ class SerialAngleNode(Node):
         self.get_logger().error("未能打开任何串口，节点将持续重试但当前不会发布角度")
 
     def _poll(self) -> None:
-        if self.serial_port is None or serial is None:
+        if serial is None:
+            return
+        if self.serial_port is None or not getattr(self.serial_port, "is_open", False):
+            self._switch_port()
             return
         try:
             available = self.serial_port.in_waiting
@@ -81,6 +89,7 @@ class SerialAngleNode(Node):
                     self.pub_angle.publish(msg)
         except Exception as e:  # noqa: BLE001
             self.get_logger().error(f"串口读写错误: {e}")
+            self._switch_port()
 
     def _parse_angle(self, data: str) -> Optional[int]:
         match = self.pattern.search(data)
@@ -89,14 +98,38 @@ class SerialAngleNode(Node):
                 angle = int(match.group(1))
                 self.last_angle = angle % 360
                 self.last_angle_time = self.get_clock().now()
-                ts = self.last_angle_time.to_msg()
-                self.get_logger().info(
-                    f"解析角度: {self.last_angle} @ {ts.sec}.{ts.nanosec:09d}"
-                )
                 return self.last_angle
             except ValueError:
                 self.get_logger().warn("角度转换失败")
+        else:
+            self._switch_port()
         return None
+
+    def _switch_port(self) -> None:
+        if not self.ports:
+            return
+        try:
+            if self.serial_port:
+                try:
+                    current = self.serial_port.port  # type: ignore[attr-defined]
+                except Exception:
+                    current = "unknown"
+                self.serial_port.close()
+                self.get_logger().warn(f"切换串口，当前关闭: {current}")
+        except Exception:
+            pass
+
+        self.current_port_index = (self.current_port_index + 1) % len(self.ports)
+        next_port = self.ports[self.current_port_index]
+        try:
+            self.get_logger().warn(f"尝试切换到串口: {next_port}")
+            sp = serial.Serial(port=next_port, baudrate=self.baud, timeout=0.1)
+            if sp.is_open:
+                self.serial_port = sp
+                self.get_logger().info(f"串口切换成功: {next_port}")
+                return
+        except Exception as e:  # noqa: BLE001
+            self.get_logger().warn(f"无法打开 {next_port}: {e}")
 
 
 def main(args: Optional[list[str]] = None) -> None:

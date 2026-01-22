@@ -11,7 +11,7 @@ def generate_launch_description():
                 name="tf_nova",
                 parameters=[
                     {
-                        "port": "/dev/ttyCH341USB0",
+                        "port": "/dev/ttyTHS1",
                         "baud_rate": 115200,
                         "frame_header": 0x59,
                         "use_mm_format": False,

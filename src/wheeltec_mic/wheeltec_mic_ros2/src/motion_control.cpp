@@ -305,34 +305,28 @@ void Motion::control()
 		// 	}
 		// }
 
-		if (follow_flag)
+	if (follow_flag)
+	{
+		int snap_angle = delayed_angle;
+		follow_flag = 0;
+		follow_waiting = false;
+		RCLCPP_INFO(this->get_logger(), "声源触发，立即捕获角度: %d", snap_angle);
+
+		if (if_akm) akm_follow_turn(snap_angle);
+		else
 		{
-			// 第一次触发 follow_flag，记录开始时间并启动等待计时
-			if (!follow_waiting) {
-				follow_start_time = this->now();
-				follow_waiting = true;
-				RCLCPP_INFO(this->get_logger(), "声源触发，开始 5 秒延迟捕获角度...");
-			}
+			RCLCPP_INFO(this->get_logger(), "开始旋转 snap_angle=%d", snap_angle);
+			follow_turn(snap_angle);
+			RCLCPP_INFO(this->get_logger(), "旋转完成 snap_angle=%d", snap_angle);
+		}
 
-			// 判断是否已经等待了 5 秒
-			if ((this->now() - follow_start_time).seconds() >= 5.0)
-			{
-				// 五秒后的最新角度 delayed_angle 即为捕获角度
-				RCLCPP_INFO(this->get_logger(), "延迟 5 秒后捕获到角度: %d", delayed_angle);
+		turn_fin_flag = 1;
 
-				if (if_akm) akm_follow_turn(delayed_angle);
-				else follow_turn(delayed_angle);
-
-				follow_flag = 0;
-				follow_waiting = false;   // 重置
-				turn_fin_flag = 1;
-
-				if (!goal_status)
-				{
-					cmd_vel_msg.linear.x = 0;
-					cmd_vel_msg.angular.z = 0;
-					goal_status = 0;
-				}
+		if (!goal_status)
+		{
+				cmd_vel_msg.linear.x = 0;
+				cmd_vel_msg.angular.z = 0;
+				goal_status = 0;
 			}
 		}
 

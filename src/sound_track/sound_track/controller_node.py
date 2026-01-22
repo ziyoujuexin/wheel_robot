@@ -42,6 +42,7 @@ class SoundTrackController(Node):
         self.last_angle: Optional[int] = None
         self.last_angle_time: Optional[rclpy.time.Time] = None
         self.last_range: Optional[float] = None
+        self.frozen_angle: Optional[int] = None
 
         self.cmd_pub = self.create_publisher(Twist, self.cmd_vel_topic, 10)
         self.create_subscription(Int8, self.state_topic, self._state_callback, 10)
@@ -65,14 +66,9 @@ class SoundTrackController(Node):
     def _angle_callback(self, msg: UInt32) -> None:
         self.last_angle = int(msg.data % 360)
         self.last_angle_time = self.get_clock().now()
-        ts = self.last_angle_time.to_msg()
-        self.get_logger().info(
-            f"[ANGLE] angle={self.last_angle} ts={ts.sec}.{ts.nanosec:09d}"
-        )
 
     def _range_callback(self, msg: Range) -> None:
         self.last_range = float(msg.range)
-        self.get_logger().debug(f"[RANGE] {self.last_range:.3f} m")
 
     def _state_callback(self, msg: Int8) -> None:
         state = msg.data
@@ -86,16 +82,29 @@ class SoundTrackController(Node):
             self.get_logger().warn(f"[STATE] sound_track_state={state} but no angle available yet")
             return
 
+        # freeze current angle snapshot for this run
         angle = self.last_angle
+        self.frozen_angle = angle
+        angle_ts = (
+            f"{self.last_angle_time.to_msg().sec}.{self.last_angle_time.to_msg().nanosec:09d}"
+            if self.last_angle_time
+            else "unknown"
+        )
+        self.get_logger().info(
+            f"[状态] 声控状态={state}，角度快照={angle}°，时间戳={angle_ts}"
+        )
         angle_rad = 0.0
         angular_z = 0.0
+        rotation_deg = 0.0
         # 0~180: 左转，发布正的 z 角速度；180~360: 右转，发布负的 z 角速度
         if angle <= 180:
             angle_rad = math.radians(angle)
             angular_z = abs(self.angular_speed)
+            rotation_deg = angle
         else:
             angle_rad = math.radians(360 - angle)
             angular_z = -abs(self.angular_speed)
+            rotation_deg = 360 - angle
 
         duration = angle_rad / max(abs(self.angular_speed), 1e-3)
         self.phase = "rotate"
@@ -105,14 +114,9 @@ class SoundTrackController(Node):
         self.current_twist = Twist()
         self.current_twist.angular.z = angular_z
 
-        angle_ts = (
-            f"{self.last_angle_time.to_msg().sec}.{self.last_angle_time.to_msg().nanosec:09d}"
-            if self.last_angle_time
-            else "unknown"
-        )
         self.get_logger().info(
-            f"[ROTATE] state={state}, angle={angle} deg (ts {angle_ts}), "
-            f"angular_z={angular_z:.2f}, duration={duration:.2f}s"
+            f"[旋转] 状态={state}，目标角={angle}°，转动角度={rotation_deg:.2f}°，"
+            f"时间戳={angle_ts}，角速度={angular_z:.2f}rad/s，预计耗时={duration:.2f}s"
         )
 
     def _control_loop(self) -> None:
@@ -128,8 +132,8 @@ class SoundTrackController(Node):
                 self.current_twist = Twist()
                 self.current_twist.linear.x = self.linear_speed
                 self.get_logger().info(
-                    f"[FORWARD] Rotation done, start forward linear.x={self.linear_speed:.2f}, "
-                    f"timeout={self.forward_timeout}s"
+                    f"[前进] 旋转完成，开始前进，线速度={self.linear_speed:.2f} m/s，"
+                    f"超时={self.forward_timeout}s"
                 )
             else:
                 self.cmd_pub.publish(self.current_twist)
@@ -153,6 +157,7 @@ class SoundTrackController(Node):
         self.cmd_pub.publish(self.current_twist)
         self.phase = "idle"
         self.phase_end_time = None
+        self.frozen_angle = None
         feedback = String()
         feedback.data = f"sound_track_stopped:{reason}"
         self.feedback_pub.publish(feedback)

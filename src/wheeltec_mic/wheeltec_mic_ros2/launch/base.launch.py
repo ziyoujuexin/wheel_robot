@@ -34,9 +34,9 @@ def generate_launch_description():
     wheeltec_robot = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(os.path.join(launch_dir, 'turn_on_wheeltec_robot.launch.py')),
     )
-    wheeltec_lidar = IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(os.path.join(launch_dir, 'wheeltec_lidar.launch.py')),
-    )
+    # wheeltec_lidar = IncludeLaunchDescription(
+    #         PythonLaunchDescriptionSource(os.path.join(launch_dir, 'wheeltec_lidar.launch.py')),
+    # )
 
     # 注释掉导航配置（已关闭）
     # wheeltec_nav = IncludeLaunchDescription(
@@ -76,26 +76,26 @@ def generate_launch_description():
         parameters=[resource_param]
     )
 
-    motion_control = Node(
-        package="wheeltec_mic_ros2",
-        executable="motion_control",
-        output='screen',
-        parameters=[resource_param,
-        command_config]   
-    )
+    # motion_control = Node(
+    #     package="wheeltec_mic_ros2",
+    #     executable="motion_control",
+    #     output='screen',
+    #     parameters=[resource_param,
+    #     command_config]   
+    # )
 
-    lasertracker = Node(
-        package="simple_follower_ros2", 
-        executable="lasertracker", 
-        name='lasertracker'
-    )
+    # lasertracker = Node(
+    #     package="simple_follower_ros2", 
+    #     executable="lasertracker", 
+    #     name='lasertracker'
+    # )
 
-    serial_angle_node = Node(
-    package="serial_angle_pkg",
-    executable="serial_angle_node",
-    name='serial_angle_node',
-    output='screen'  # 可选，用于在终端显示输出
-    )
+    # serial_angle_node = Node(
+    # package="serial_angle_pkg",
+    # executable="serial_angle_node",
+    # name='serial_angle_node',
+    # output='screen'  # 可选，用于在终端显示输出
+    # )
 
     ld = LaunchDescription()
     
@@ -104,11 +104,11 @@ def generate_launch_description():
     ld.add_action(set_fastdds_env)
     
     # 然后按顺序添加你的所有节点
-    ld.add_action(serial_angle_node)
+    # ld.add_action(serial_angle_node)
     ld.add_action(wheeltec_robot)
-    ld.add_action(wheeltec_lidar)
+    # ld.add_action(wheeltec_lidar)
     # ld.add_action(wheeltec_nav)  # 导航配置已关闭
-    ld.add_action(lasertracker)
+    # ld.add_action(lasertracker)
 
     # ld.add_action(body_follow)    
 
@@ -119,6 +119,6 @@ def generate_launch_description():
     # ld.add_action(command_recognition)
     
     ld.add_action(node_feedback)
-    ld.add_action(motion_control)
+    # ld.add_action(motion_control)
     
     return ld

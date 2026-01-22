@@ -64,24 +64,24 @@ def generate_launch_description():
     #arguments=['0', '0', '0.0216','0', '0','0','base_footprint','base_link'] 
 
     # 舵机控制节点
-    # ft_driver_node = launch_ros.actions.Node(
-    #     package='ft_driver',
-    #     executable='subnode_ft',
-    #     name='ft_sub_node',
-    #     output='screen',
-    #     parameters=[motor_param_file],
-    #     emulate_tty=True,
-    #     arguments=['--arg1'],
-    # )
+    ft_driver_node = launch_ros.actions.Node(
+        package='ft_driver',
+        executable='subnode_ft',
+        name='ft_sub_node',
+        output='screen',
+        parameters=[motor_param_file],
+        emulate_tty=True,
+        arguments=['--arg1'],
+    )
     
-    # motor_model_node = launch_ros.actions.Node(
-    #     package='move_ft',
-    #     executable='motorModel',
-    #     name='motorModel',
-    #     parameters=[motor_param_file],
-    #     output='screen',
-    #     emulate_tty=True,
-    # )
+    motor_model_node = launch_ros.actions.Node(
+        package='move_ft',
+        executable='motorModel',
+        name='motorModel',
+        parameters=[motor_param_file],
+        output='screen',
+        emulate_tty=True,
+    )
 
     base_to_link = launch_ros.actions.Node(
             package='tf2_ros', 
@@ -169,8 +169,8 @@ def generate_launch_description():
     ld.add_action(sound_track_launch)
 
     # 添加舵机控制节点
-   # ld.add_action(ft_driver_node)
-   # ld.add_action(motor_model_node)
+    ld.add_action(ft_driver_node)
+    ld.add_action(motor_model_node)
     
     # 添加YOLO和摄像头启动
     if yolo_launch:

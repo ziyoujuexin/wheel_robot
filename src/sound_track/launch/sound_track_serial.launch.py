@@ -21,7 +21,7 @@ def generate_launch_description():
                 name="serial_angle_node",
                 parameters=[
                     {
-                        "ports": "/dev/ttyCH343USB1,/dev/ttyCH343USB0,/dev/ttyCH343USB2",
+                        "ports": "/dev/ttyCH343USB1,/dev/ttyCH343USB0,/dev/ttyCH343USB2,/dev/ttyCH341USB0,/dev/ttyCH341USB1,/dev/ttyCH341USB2",
                         "baud_rate": 115200,
                         "regex_pattern": r"Detected Angle:\s*(\d+)",
                         "output_topic": "awake_angle",

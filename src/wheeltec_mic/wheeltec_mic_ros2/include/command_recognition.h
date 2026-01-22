@@ -41,6 +41,7 @@ private:
 	wheeltec_mic_msg::msg::MotionControl motion_;
 
 	rclcpp::Publisher<std_msgs::msg::Int8>::SharedPtr awake_flag_pub,laser_follow_flag_pub;
+    rclcpp::Publisher<std_msgs::msg::Int8>::SharedPtr sound_track_state_pub;
     rclcpp::Publisher<wheeltec_mic_msg::msg::MotionControl>::SharedPtr motion_msg_pub;
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_nav_pub;
 
